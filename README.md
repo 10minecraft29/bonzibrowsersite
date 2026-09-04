@@ -8,7 +8,6 @@ A static product/download website for BonziBrowser 3.0.0.
 - `styles.css` — responsive Bonztel-themed styling
 - `script.js` — reveal animations and smooth navigation
 - `assets/bonzibrowser-mark.svg` — BonziBrowser product mark
-- `downloads/BonziBrowser-Setup-3.0.0.exe` — Windows installer
 
 ## Run locally
 
@@ -31,3 +30,11 @@ The included installer is about 107 MB. Make sure your hosting provider permits 
 ## Installer SHA-256
 
 `15ae2b4cea588953562c65f5705965f286fae632d469aa6fccc272f8b4d63b1d`
+
+## Download hosting
+
+The Windows installer is hosted as a GitHub Release asset instead of being stored in this repository:
+
+`https://github.com/10minecraft29/bonzibrowsersite/releases/download/1/BonziBrowser-Setup-3.0.0.exe`
+
+All Download buttons in `index.html` point directly to that Release asset. This keeps the repository below GitHub's 100 MiB per-file limit.
