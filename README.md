@@ -1,6 +1,6 @@
 # BonziBrowser Website
 
-A static product/download website for BonziBrowser 3.0.0.
+A static product/download website for BonziBrowser 4.0.5.
 
 ## Files
 
@@ -25,16 +25,12 @@ This is a plain static site and can be deployed to Vercel, Netlify, Cloudflare P
 
 ### Important for the installer
 
-The included installer is about 107 MB. Make sure your hosting provider permits individual static files of that size. If not, host the `.exe` as a release asset/object-storage download and change the two installer links in `index.html`.
-
-## Installer SHA-256
-
-`15ae2b4cea588953562c65f5705965f286fae632d469aa6fccc272f8b4d63b1d`
+The Windows installer is intentionally not stored in the website repository. All download buttons point to the GitHub Release asset so the repo stays below GitHub's 100 MiB per-file limit.
 
 ## Download hosting
 
 The Windows installer is hosted as a GitHub Release asset instead of being stored in this repository:
 
-`https://github.com/10minecraft29/bonzibrowsersite/releases/download/1/BonziBrowser-Setup-3.0.0.exe`
+`https://github.com/10minecraft29/bonzibrowsersite/releases/download/1/BonziBrowser-Setup-4.0.5.exe`
 
-All Download buttons in `index.html` point directly to that Release asset. This keeps the repository below GitHub's 100 MiB per-file limit.
+All Download buttons in `index.html` point directly to that Release asset. The site does not bundle the `.exe`. This keeps the repository below GitHub's 100 MiB per-file limit.

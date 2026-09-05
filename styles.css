@@ -153,6 +153,14 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .shield-item { display: grid; grid-template-columns: 27px 1fr auto; align-items: center; padding: 15px 3px; border-bottom: 1px solid rgba(255,255,255,.055); font-size: 12px; }
 .shield-item > strong { color: #bca3ff; font-size: 11px; }
 
+
+.release-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 13px; }
+.release-grid > div { min-height: 170px; padding: 25px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.025); }
+.release-grid span { display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 12px; color: #bca3ff; background: #1c152a; margin-bottom: 26px; font-weight: 800; }
+.release-grid strong, .release-grid small { display: block; }
+.release-grid strong { margin-bottom: 6px; font-size: 15px; }
+.release-grid small { color: #777181; line-height: 1.45; }
+
 .ecosystem-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 13px; }
 .ecosystem-grid > div { min-height: 170px; padding: 25px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.025); }
 .ecosystem-grid span { display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 12px; color: #bca3ff; background: #1c152a; margin-bottom: 26px; font-weight: 800; }
@@ -206,7 +214,7 @@ footer > div { display: flex; gap: 22px; }
   .feature-grid { grid-template-columns: repeat(2,1fr); }
   .feature-card { grid-column: span 1; }
   .security-section { margin-left: 28px; margin-right: 28px; padding: 55px 40px; gap: 45px; }
-  .ecosystem-grid { grid-template-columns: repeat(2,1fr); }
+  .release-grid, .ecosystem-grid { grid-template-columns: repeat(2,1fr); }
   .requirements-grid { grid-template-columns: repeat(2,1fr); }
   .requirements-grid div:nth-child(2) { border-right: 0; }
   .requirements-grid div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
@@ -238,7 +246,7 @@ footer > div { display: flex; gap: 22px; }
   .purple-card { min-height: auto !important; }
   .fake-tabs span:nth-child(n+4) { display: none; }
   .security-section { grid-template-columns: 1fr; margin: 20px 18px 90px; padding: 42px 24px; }
-  .ecosystem-grid { grid-template-columns: 1fr 1fr; }
+  .release-grid, .ecosystem-grid { grid-template-columns: 1fr 1fr; }
   .download-section { padding: 20px 18px 90px; }
   .download-card { padding: 42px 24px; flex-direction: column; align-items: flex-start; }
   .download-cta, .white-button { width: 100%; }
