@@ -1,36 +1,20 @@
-# BonziBrowser Website
+# BonziBrowser Website 4.1.4 — One Directory
 
-A static product/download website for BonziBrowser 4.0.5.
+Everything in this package is stored in one directory. There are no nested page or asset folders.
 
-## Files
-
-- `index.html` — main product page
-- `styles.css` — responsive Bonztel-themed styling
-- `script.js` — reveal animations and smooth navigation
-- `assets/bonzibrowser-mark.svg` — BonziBrowser product mark
-
-## Run locally
-
-You can open `index.html` directly, or serve the folder with a simple static server:
-
-```bash
-python -m http.server 8080
-```
-
-Then open `http://localhost:8080`.
+## Main files
+- `index.html` — homepage
+- `download.html` — download page
+- `releases.html` — release notes
+- `extensions.html` — Extensions Store
+- `privacy.html` — privacy page
+- `support.html` — support / FAQ
+- `about.html` — about page
+- `404.html` — not-found page
+- `styles.css`, `script.js`, `site-config.js` — shared site files
+- all PNG/SVG assets are in this same directory
 
 ## Deploy
+Upload all files directly to the root of the GitHub/Vercel project. The installer remains hosted on GitHub Releases.
 
-This is a plain static site and can be deployed to Vercel, Netlify, Cloudflare Pages, GitHub Pages, or most normal web hosts.
-
-### Important for the installer
-
-The Windows installer is intentionally not stored in the website repository. All download buttons point to the GitHub Release asset so the repo stays below GitHub's 100 MiB per-file limit.
-
-## Download hosting
-
-The Windows installer is hosted as a GitHub Release asset instead of being stored in this repository:
-
-`https://github.com/10minecraft29/bonzibrowsersite/releases/download/1/BonziBrowser-Setup-4.0.5.exe`
-
-All Download buttons in `index.html` point directly to that Release asset. The site does not bundle the `.exe`. This keeps the repository below GitHub's 100 MiB per-file limit.
+Edit `site-config.js` to change version/download metadata.
