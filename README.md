@@ -1,24 +1,17 @@
-# BonziBrowser Website 4.1.4 — One Directory
+# BonziBrowser website — 4.1.13
 
-Everything in this package is stored in one directory. There are no nested page or asset folders.
-
-## Main files
-- `index.html` — homepage
-- `download.html` — download page
-- `releases.html` — release notes
-- `extensions.html` — Extensions Store
-- `privacy.html` — privacy page
-- `support.html` — support / FAQ
-- `about.html` — about page
-- `404.html` — not-found page
-- `styles.css`, `script.js`, `site-config.js` — shared site files
-- all PNG/SVG assets are in this same directory
+Flat, one-directory static site for `browser.bonztel.com`.
 
 ## Deploy
-Upload all files directly to the root of the GitHub/Vercel project. The installer remains hosted on GitHub Releases.
 
-Edit `site-config.js` to change version/download metadata.
+Upload every file in this directory to the root of the `bonzibrowsersite` repository and deploy with Vercel. `vercel.json` enables clean URLs without trailing slashes.
 
+## Current installer
 
-## Styling fix
-All CSS, JavaScript, icons, and screenshots use root-relative asset paths so clean Vercel routes such as `/privacy` and `/download` load the same shared styling correctly. `trailingSlash` is disabled to prevent nested asset resolution.
+`https://github.com/10minecraft29/bonzibrowsersite/releases/download/3/BonziBrowser-Setup-4.1.13.exe`
+
+## Updating a future release
+
+Edit `site-config.js` first, then update the visible release copy/metadata in `index.html`, `download.html`, and `releases.html`.
+
+All CSS, JS, icons, screenshots, HTML pages, manifest, sitemap and Vercel config remain in this single directory.
