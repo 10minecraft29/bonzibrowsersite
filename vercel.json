@@ -1,6 +1,6 @@
 {
   "cleanUrls": true,
-  "trailingSlash": true,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",
@@ -18,56 +18,6 @@
           "value": "camera=(), microphone=(), geolocation=()"
         }
       ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/download",
-      "destination": "/download.html"
-    },
-    {
-      "source": "/download/",
-      "destination": "/download.html"
-    },
-    {
-      "source": "/releases",
-      "destination": "/releases.html"
-    },
-    {
-      "source": "/releases/",
-      "destination": "/releases.html"
-    },
-    {
-      "source": "/extensions",
-      "destination": "/extensions.html"
-    },
-    {
-      "source": "/extensions/",
-      "destination": "/extensions.html"
-    },
-    {
-      "source": "/privacy",
-      "destination": "/privacy.html"
-    },
-    {
-      "source": "/privacy/",
-      "destination": "/privacy.html"
-    },
-    {
-      "source": "/support",
-      "destination": "/support.html"
-    },
-    {
-      "source": "/support/",
-      "destination": "/support.html"
-    },
-    {
-      "source": "/about",
-      "destination": "/about.html"
-    },
-    {
-      "source": "/about/",
-      "destination": "/about.html"
     }
   ]
 }

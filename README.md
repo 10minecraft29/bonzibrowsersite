@@ -18,3 +18,7 @@ Everything in this package is stored in one directory. There are no nested page 
 Upload all files directly to the root of the GitHub/Vercel project. The installer remains hosted on GitHub Releases.
 
 Edit `site-config.js` to change version/download metadata.
+
+
+## Styling fix
+All CSS, JavaScript, icons, and screenshots use root-relative asset paths so clean Vercel routes such as `/privacy` and `/download` load the same shared styling correctly. `trailingSlash` is disabled to prevent nested asset resolution.
