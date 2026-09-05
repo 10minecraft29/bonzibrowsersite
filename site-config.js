@@ -1,6 +1,6 @@
 window.BONZI_SITE = {
   version: '4.1.4',
-  downloadUrl: 'https://github.com/10minecraft29/bonzibrowsersite/releases/download/2/BonziBrowser-Setup-4.1.4.exe',
+  downloadUrl: 'https://github.com/10minecraft29/bonzibrowsersite/releases/download/2/BonziBrowser-Setup-4.1.5.exe',
   releaseUrl: 'https://github.com/10minecraft29/bonzibrowsersite/releases/tag/2',
   releasesUrl: 'https://github.com/10minecraft29/bonzibrowsersite/releases',
   installerName: 'BonziBrowser-Setup-4.1.4.exe',
